@@ -4,7 +4,7 @@ USER root
 
 EXPOSE 8888
 
-RUN pip install --no-cache-dir boto3 jupyterlab pyspark confluent_kafka \
+RUN pip install --no-cache-dir boto3 jupyterlab pyspark pymongo confluent_kafka \
     && useradd -ms /bin/bash lab
 
 WORKDIR /home/lab
